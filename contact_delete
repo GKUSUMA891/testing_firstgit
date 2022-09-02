@@ -1,0 +1,12 @@
+import uiautomator2 as ui2
+a=ui2.connect("emulator-5554") #get from adb devices
+print(a.info)
+a(text="Phone").click()
+a(text="Kush").click()
+a(className="android.widget.ImageButton").click()
+##a(text="kush").remove()
+##a(content-desc="More options").click()
+a(text="Delete").click()
+a(text="DELETE").click()
+a.press("back")
+a.press("Home")
